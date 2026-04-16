@@ -1,0 +1,147 @@
+.buy-section {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.buy-container {
+    max-width: 1300px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+
+.buy-image-side {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.buy-main-img {
+    width: 100%;
+    max-width: 550px;
+    z-index: 2;
+}
+
+.buy-glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(74, 222, 128, 0.15) 0%, transparent 70%);
+    bottom: 10%;
+    filter: blur(50px);
+    z-index: 1;
+}
+
+
+.buy-content-side {
+    flex: 1;
+}
+
+.platform-tag {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 16px 15px;
+    position: relative;
+}
+
+
+.buy-title {
+    font-family: 'TacticSans-Bold', sans-serif;
+    font-size: 48px;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.Color {
+    background: linear-gradient(135deg, rgba(208, 255, 191, 1), rgba(121, 255, 74, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+
+.steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.step-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: #333;
+}
+
+.step-number {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 1);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.step-text {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.btn-signup:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(74, 222, 128, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .buy-container {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+    }
+
+    .buy-image-side {
+        margin-bottom: 0px;
+    }
+
+    .step-card {
+        text-align: left;
+    }
+
+    .btn-signup {
+        width: 30%;
+        padding: 10px 20px;
+
+    }
+
+    .buy-title {
+        font-size: 36px;
+    }
+}

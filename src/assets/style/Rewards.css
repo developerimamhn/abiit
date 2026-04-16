@@ -1,0 +1,89 @@
+.rewards-section {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .rewards-container {
+    max-width: 1300px;
+    width: 80%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .rewards-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  
+  .rewards-title {
+    font-family: 'TacticSans-Bold', sans-serif;
+    font-size: 42px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .rewards-desc {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 450px;
+    text-align: right;
+  }
+
+  .rewards-display-area {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rewards-main-img {
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+    z-index: 2;
+    display: block;
+  }
+  
+  .rewards-glow {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(74, 222, 128, 0.1) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(80px);
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 1024px) {
+    .rewards-header {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+    .rewards-desc {
+      text-align: center;
+      margin: 0 auto;
+    }
+    .rewards-title {
+      font-size: 36px;
+    }
+    .rewards-section{
+        padding: 60px 0;
+    }
+  }

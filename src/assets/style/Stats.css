@@ -1,0 +1,61 @@
+.stats-section {
+    width: 100%;
+    padding: 100px 24px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  
+  .stats-container {
+    max-width: 1300px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .stat-label {
+    color: #A5A5A5;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  
+  .stat-value {
+    color: #F2F2F3;
+    font-family: 'TacticSans-Bold', sans-serif;
+    font-size: 55px;
+    line-height: 1;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: -2px;
+  }
+  
+  /* Tablet & Mobile Layout */
+  @media (max-width: 1024px) {
+    .stats-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 80px 40px;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .stats-container {
+      grid-template-columns: 1fr;
+    }
+    .stat-value {
+      font-size: 56px;
+    }
+  }
